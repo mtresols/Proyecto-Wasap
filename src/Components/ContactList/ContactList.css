@@ -1,0 +1,84 @@
+.contact_item{
+    display: flex;
+    align-items: center;    
+    gap: 12px;    
+    border-bottom: 1px solid #e6e3e3;    
+    width: 380px;
+    height: 90px;   
+    color: black;
+    padding: 0 10px;
+
+}
+
+
+.contact_item:hover {
+    background: #f5f5f5;
+}
+
+
+.contact_avatar{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90px;
+    height:90px;
+}
+
+.contact_avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.contact_name_date_lastmessage_unseen{
+    width: 380px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_name_date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.contact_date{   
+    font-size: 12px;
+    color: #777;
+}
+
+
+.contact_name{     
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+
+.last_message{      
+    margin-top: 3px;
+    font-size: 13px;
+    color: #666;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+
+
+.messages_unseen{
+    background: #25d366;
+    color: white;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+    
+}

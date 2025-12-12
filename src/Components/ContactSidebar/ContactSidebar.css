@@ -1,0 +1,60 @@
+.aside-dark{
+    background-color: black;
+    color: white;
+}
+
+
+
+.contact_data{
+    display: flex;
+  
+}
+
+
+
+.contact_data_lateral{
+    width: 50px;
+    height: 800px;
+    background-color: rgb(234, 241, 239);
+}
+
+.contact_data_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:  380px;
+    height: 60px;
+    background-color: #e6e3e3;
+    padding: 0 10px;
+    
+}
+
+.contact_data_header h1{
+    font-size: 24px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    display: flex;   
+    padding: 0 10px;
+}
+
+.contact_add_button{
+    font-size: 18px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.contact_data_aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 800px;
+    background-color: #b6adad;
+}
+
+.contact_search{
+    width: 380px;
+    height: 60px;
+    padding: 0 10px;
+    background-color: #e6e3e3;
+    display: flex;    
+}
