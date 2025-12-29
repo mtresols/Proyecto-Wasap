@@ -1,72 +1,108 @@
 .contact_item{
-    display: flex;
-    align-items: center;    
-    gap: 12px;    
-    border-bottom: 1px solid #e6e3e3;    
-    width: 380px;
-    height: 90px;   
+    display: flex;        
+    align-items: center; 
+    /*border-bottom: 1px solid #e6e3e3;*/    
+    width: 100%;
+    height: 92px;   
     color: black;
-    padding: 0 10px;
-
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 1;
 }
 
-
-.contact_item:hover {
-    background: #f5f5f5;
+.contact_item::before {
+    content: ""; /* Obligatorio para que aparezca */
+    position: absolute;
+    top: 4px;    /* Margen superior interno */
+    bottom: 4px; /* Margen inferior interno */
+    left: 8px;   /* Margen izquierdo interno */
+    right: 8px;  /* Margen derecho interno */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: transparent; /* Invisible por defecto */
+    z-index: -1; /* Se coloca detrás del avatar y el texto */
+    transition: background-color 0.2s ease;
 }
 
+.contact_item:hover::before {
+    background: #f5f5f5;     
+}
 
 .contact_avatar{   
     display: flex;
     align-items: center;
     justify-content: center;
-    width:90px;
-    height:90px;
+    width: 80px; 
+    height: 75px;     
+    flex-shrink: 0;
+    padding: 0 0 0 10px;
 }
 
 .contact_avatar img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    
-}
-.contact_name_date_lastmessage_unseen{
-    width: 380px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 55%;
+    object-fit: cover;    
 }
 
-.contact_name_date{
+.contact_name_last{
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%;    
+    padding: 0 0 0 8px;
+    
+}
+
+.contact_name_last h2{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.contact_name_last p{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.date_unseen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px 0 0;
+}
+
+.unseen{
+    padding: 0 12px 0 0;
 }
 
 .contact_date{   
     font-size: 12px;
     color: #777;
-}
-
-
-.contact_name{     
-    margin: 0;
-    font-size: 15px;
+    padding: 10px 20px 0 0;
     font-weight: bold;
     font-family:"Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 
-.last_message{      
-    margin-top: 3px;
-    font-size: 13px;
-    color: #666;
-    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+.contact_name{ 
+    font-size: 20px;
+    font-weight: 400;
+    font-family:"Roboto Variable", "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", "Arial", "Ubuntu", "Cantarell", "Fira Sans", "sans-serif"; 
 }
 
+.last_message{      
+    font-size: 18px;
+    color: #292828;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
 
+}
 
 .messages_unseen{
     background: #25d366;
@@ -81,4 +117,44 @@
     font-weight: bold;
     font-family:"Segoe UI", Arial, Helvetica, sans-serif;
     
+    
+}
+
+.loading_message  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.loading_img{
+    width: 100%;      
+    height: auto;
+}
+
+.loading_message{
+    position: fixed;    
+    width: 100vw;     
+    height: 100vh;     
+    background-color: white; 
+    display: flex;     
+    justify-content: center;
+    align-items: center;   
+    z-index: 9999;     
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.loading_text {
+    font-size: 20px;
+    color: #292828;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.no_results{
+    font-size: 18px;
+    color: #292828;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+    padding: 0 0 0 20px;
+
 }
