@@ -134,14 +134,22 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .contact_data_lateral {
-        width: 50px; /* Ajustamos el espacio en tablets */
+        width: 50px; 
     }
 
-
     .contact_data_aside {
-        width: 100%; /* Ajustamos el espacio en tablets */
+        width: 100%; 
         max-width: 400px;
     }
 }
 
+@media (max-width: 768px) {
+    .contact_data_lateral {
+        width: 40px; 
+    }
 
+    .contact_data{
+        width: 100%; 
+        
+    }
+}
