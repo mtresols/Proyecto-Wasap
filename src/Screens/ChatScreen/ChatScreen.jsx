@@ -9,9 +9,21 @@ import MessagesScreen from '../MessagesScreen/MessagesScreen'
 
 export default function ChatScreen() {
 return (
-    <div className='chat_screen'>        
-        <ContactSidebar/>
-        
-    </div>
-)
+        <div className='messages_layout'> 
+            <div className='sidebar_container'> 
+                <ContactSidebar />
+            </div>
+            <div className='messages_container'> 
+                <div style={{ 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center', 
+                    height: '100%',
+                    color: '#667781'
+                }}>
+                    <p>Ningun mensjae seleccioando</p>
+                </div>
+            </div>
+        </div>
+    )
 }

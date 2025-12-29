@@ -34,7 +34,7 @@ function ContactSidebar() {
                     {/*<button onClick={toggleTheme}> Cambiar Tema</button>   */}
                     <header className="contact_data_header">
                         <div className="icon_title">
-                            {/*<img className='icon' src='/logomiausapp.jpg'></img>*/}
+                            
                             <h1 className="header_title">MiausApp</h1>
                         </div>
                         <div className="div_contact_add_button">

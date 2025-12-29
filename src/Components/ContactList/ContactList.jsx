@@ -17,7 +17,7 @@ function ContactList({ searchQuery }) { // <-- Recibimos la prop aquí
             </div>
         )
     }
-   
+
     const filteredContacts = contactState.filter((contact) =>
         contact.contact_name.toLowerCase().includes(searchQuery.toLowerCase())
     )
@@ -25,7 +25,7 @@ function ContactList({ searchQuery }) { // <-- Recibimos la prop aquí
     if (filteredContacts.length === 0) {
         return <div className="no_results">No se encontraron contactos</div>
     }
-  
+
     return (   
         <div className='contact_list'>
             {filteredContacts.map((contact) => (

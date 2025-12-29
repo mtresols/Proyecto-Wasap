@@ -130,29 +130,12 @@
     display: none;
 }
 
-.loading_img img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
 
-}
-
-.loading_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-
-}
 
 
 
 /*-------------RESPONSIVE---------------------*/
 
-/* --- Media Queries para Responsive --- */
 /* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
     .contact_data_aside{

@@ -1,7 +1,6 @@
 .contact_item{
     display: flex;        
-    align-items: center; 
-    /*border-bottom: 1px solid #e6e3e3;*/    
+    align-items: center;      
     width: 100%;
     height: 92px;   
     color: black;
@@ -12,15 +11,15 @@
 }
 
 .contact_item::before {
-    content: ""; /* Obligatorio para que aparezca */
+    content: ""; 
     position: absolute;
-    top: 4px;    /* Margen superior interno */
-    bottom: 4px; /* Margen inferior interno */
-    left: 8px;   /* Margen izquierdo interno */
-    right: 8px;  /* Margen derecho interno */
-    border-radius: 20px; /* Bordes redondeados */
-    background-color: transparent; /* Invisible por defecto */
-    z-index: -1; /* Se coloca detrás del avatar y el texto */
+    top: 4px;    
+    bottom: 4px; 
+    left: 8px;  
+    right: 8px;  
+    border-radius: 20px; 
+    background-color: transparent;
+    z-index: -1; 
     transition: background-color 0.2s ease;
 }
 
@@ -120,36 +119,7 @@
     
 }
 
-.loading_message  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.loading_img{
-    width: 100%;      
-    height: auto;
-}
-
-.loading_message{
-    position: fixed;    
-    width: 100vw;     
-    height: 100vh;     
-    background-color: white; 
-    display: flex;     
-    justify-content: center;
-    align-items: center;   
-    z-index: 9999;     
-    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
-}
-
-.loading_text {
-    font-size: 20px;
-    color: #292828;
-    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
-}
 
 .no_results{
     font-size: 18px;

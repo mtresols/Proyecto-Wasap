@@ -1,5 +1,5 @@
 .new_message_form {
-    background-color: #ffffff; /* Or transparent as requested */
+    background-color: #ffffff; 
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 5px 15px;
@@ -9,9 +9,6 @@
     height: 70px;    
 }
 
-
-
-/* El textarea o input */
 #message {
     background: transparent;
     border: none;
@@ -22,7 +19,6 @@
     outline: none;
     resize: none;
     overflow-y: auto;
-
 }
 
 textarea#message {
@@ -36,7 +32,6 @@ textarea#message {
     color: #8c8c8c;
 }
 
-/* Botón Enviar */
 button[type="submit"] {
     background: none;
     border: none;
@@ -46,7 +41,6 @@ button[type="submit"] {
     padding: 0 10px;
 }
 
-/* Iconos adicionales simulados (si hubieran) */
 .add_label {
     display: none;
     color : #000000;   
