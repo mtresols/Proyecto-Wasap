@@ -11,31 +11,26 @@ export const ContactDetailContext = createContext();
 const ContactDetailContextProvider = () => {
     const parametros_url = useParams()
     const contact_id = parametros_url.contact_id
-    // eslint-disable-next-line no-unused-vars
+
     const { contactState, getContactById, updateContactById } = useContext(ContactListContext)
     
     const contactSelected = getContactById(contact_id)  
 
-useEffect(() => {
-        // Solo actuamos si hay mensajes sin leer
+useEffect(() => {        
         if (contactSelected && contactSelected.contact_unseen_messages > 0) {
             
             const updatedContact = {
                 ...contactSelected,
-                contact_unseen_messages: 0, // Ponemos el contador en 0
-                
-                // Marcamos todos los mensajes como 'SEEN'
+                contact_unseen_messages: 0,                
                 messages: contactSelected.messages.map(msg => ({
                     ...msg,
                     message_state: 'SEEN'
                 }))
-            }
-            
-            // Notificamos al Contexto de la Lista para actualizar el estado global
+            }          
+
             updateContactById(updatedContact, contact_id)
         }
     }, [contact_id, contactSelected]) 
-
 
 
 
