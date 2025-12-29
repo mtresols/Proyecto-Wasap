@@ -9,7 +9,7 @@ import MessagesScreen from '../MessagesScreen/MessagesScreen'
 
 export default function ChatScreen() {
 return (
-        <div className='messages_layout'> 
+        <div className='messages_layout home_view'> 
             <div className='sidebar_container'> 
                 <ContactSidebar />
             </div>

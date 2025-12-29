@@ -12,10 +12,8 @@ import ContactDetailContextProvider from "./Context/ContactDetailContext"
 function App(){
   return(
   <>
-      <div>
-        {/*<ContactSidebar/>*/}
-        <Routes>
-          {/* Cuando estemos en la ruta contact mostrar el h1 */}
+      <div className="app">      
+        <Routes>        
           <Route 
             element={<ContactListContextProvider/>}
           >

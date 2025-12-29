@@ -1,4 +1,3 @@
-/* --- Contenedor general del sidebar --- */
 .contact_data {
     display: flex;
     height: 100vh;
@@ -9,14 +8,12 @@
     background-color: #fff;
 }
 
-/* --- Columna lateral (nav bar pequeña) --- */
 .contact_data_lateral {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 60px;
-    /* Ancho fijo angosto */
     background-color: #f0f2f5;    
     justify-content: space-between;
     padding-top: 20px;
@@ -64,7 +61,7 @@
 .contact_data_aside {
     display: flex;
     flex-direction: column;
-    flex:1;
+    flex: 1;
     min-width: 0px;
     flex-shrink: 1;
     height: 100%;

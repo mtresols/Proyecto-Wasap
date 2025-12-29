@@ -3,7 +3,7 @@ import './ContactList.css'
 import './../../global.css'
 import { Link } from 'react-router'
 import { ContactListContext } from '../../Context/ContactListContext'
-function ContactList({ searchQuery }) { // <-- Recibimos la prop aquí
+function ContactList({ searchQuery }) { 
     const {
         contactState,
         loadingContactsState,        

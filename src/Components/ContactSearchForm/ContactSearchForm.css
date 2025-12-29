@@ -1,7 +1,6 @@
 .search_container {    
     position: relative;
-    width: 100%; 
-    
+    width: 100%;    
     
 }
 
@@ -23,7 +22,7 @@
     left: 15px;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #54656f;   /* gris de WhatsApp */
-    pointer-events: none; /* evita que el icono bloquee el click */
+    color: #54656f; 
+    pointer-events: none; 
     padding:2px 20px 0 3px;
 }

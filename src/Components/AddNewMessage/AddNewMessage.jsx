@@ -26,12 +26,3 @@ export default function AddNewMessage() {
     )
 }
 
-/*const [messageText, setMessageText] = useState('');
-
-function handlesubmitNewMessage (event){
-    event.preventDefault()
-    if (messageText.trim()) {
-        addNewMessage(messageText);
-        setMessageText('');
-    }
-}*/

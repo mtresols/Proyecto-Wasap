@@ -12,7 +12,6 @@ return (
                 name="q" 
                 placeholder="Buscar"
                 onChange={(e) => setSearchQuery(e.target.value)}>
-                {/*<button type="submit">Buscar</button>*/} 
                 </input>
             </div>                
         </form>

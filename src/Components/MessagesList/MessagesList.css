@@ -8,26 +8,21 @@
 
 .messages_list {
     padding: 30px 5%;
-    /* Espaciado lateral */
     display: flex;
     flex-direction: column;
     gap: 2px;
-    /* Espacio entre mensajes del mismo bloque (WhatsApp es pequeÃ±o) */
     overflow-y: auto;
     flex: 1;
     font-size: 12px;
     font-family: "segoe ui', Arial, Helvetica, sans-serif";
 }
 
-/* Fila del mensaje (ocupa todo el ancho para permitir alineaciÃ³n) */
 .message_row {
     display: flex;
     margin-bottom: 8px;
-    /* Espacio entre bloques de mensajes */
     width: 100%;
 }
 
-/* AlineaciÃ³n */
 .message_own {
     justify-content: flex-end;    
 }
@@ -36,7 +31,6 @@
     justify-content: flex-start;
 }
 
-/* La burbuja en sÃ­ */
 .message_bubble {
     max-width: 70%;
     padding: 6px 7px 8px 9px;
@@ -48,12 +42,9 @@
     color: #111b21;   
 }
 
-/* Colores de burbuja */
 .message_own .message_bubble {
     background-color: #d9fdd3;
-    /* Verde WhatsApp */
     border-top-right-radius: 0;
-    /* Efecto de punta si se quisiera */
 }
 
 .message_other .message_bubble {

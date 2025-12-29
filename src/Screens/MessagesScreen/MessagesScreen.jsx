@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
 import React, { useContext } from 'react'
-import { useParams } from 'react-router'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
-import { getContactById } from '../../services/contactService'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 import { ContactListContext } from '../../Context/ContactListContext'
 import AddNewMessage from '../../Components/AddNewMessage/AddNewMessage.jsx'

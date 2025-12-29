@@ -147,22 +147,42 @@
         min-width:350px;
     }
 }
+
 /* Móviles */
+
 @media (max-width: 768px) {
     .messages_layout {
         flex-direction: column;
     }
+    
     .sidebar_container {
         display: none; 
     }
     
-    .contact_data_aside{
+    .messages_container {
+        width: 100%;
+        flex: 1;
+    }
+    
+    .contact_data_aside {
         width: 100%;
         max-width: 460px;
     }
 
     .back_button_mobile {
         display: flex !important;
+        align-items: center;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .home_view .sidebar_container {
+        display: block;
+        width: 100%;
+    }
+    
+    .home_view .messages_container {
+        display: none;
     }
 }
 
