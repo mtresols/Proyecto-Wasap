@@ -146,10 +146,11 @@
 @media (max-width: 768px) {
     .contact_data_lateral {
         width: 40px; 
+        margin: 0 0 0 20px
     }
 
     .contact_data{
         width: 100%; 
-        
+        margin: 0 0 0 20px
     }
 }
